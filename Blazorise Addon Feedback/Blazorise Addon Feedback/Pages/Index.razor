@@ -1,0 +1,20 @@
+﻿@page "/"
+
+@using Blazorise
+
+<Validation Validator="ValidationRule.IsNotEmpty">
+    <Addons>
+        <Addon AddonType="AddonType.Body">
+            <TextEdit Placeholder="Enter name">
+                <Feedback>
+                    <ValidationNone></ValidationNone>
+                    <ValidationSuccess></ValidationSuccess>
+                    <ValidationError>Enter valid name!</ValidationError>
+                </Feedback>
+            </TextEdit>
+        </Addon>
+        <Addon AddonType="AddonType.End">
+            <AddonLabel>This is a label</AddonLabel>
+        </Addon>
+    </Addons>
+</Validation>
